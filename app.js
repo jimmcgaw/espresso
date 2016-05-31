@@ -1,5 +1,10 @@
 var express = require('express');
+var mysql = require('mysql');
 
+// share this connection pool between our routes
+var poolConfig = require('./src/config/poolConfig');
+
+var connectionPool = mysql.createPool(poolConfig);
 
 var app = express();
 
@@ -22,7 +27,7 @@ var nav = [
     
 ];
 
-var aboutRouter = require('./src/routes/aboutRoutes')(nav);
+var aboutRouter = require('./src/routes/aboutRoutes')(nav, connectionPool);
 
 app.use('/about', aboutRouter);
 

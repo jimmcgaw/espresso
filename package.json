@@ -14,7 +14,9 @@
     "ejs": "^2.4.2",
     "express": "^4.13.4",
     "express-handlebars": "^3.0.0",
-    "jade": "^1.11.0"
+    "jade": "^1.11.0",
+    "merge": "^1.2.0",
+    "mysql": "^2.10.2"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
