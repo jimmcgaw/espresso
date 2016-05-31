@@ -14,22 +14,33 @@
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/styles.css">
     <!-- endinject -->
-      
-    <!-- bower:js -->
-    <script src="/lib/jquery/dist/jquery.js"></script>
-    <script src="/lib/bootstrap/dist/js/bootstrap.js"></script>
-    <!-- endbower -->
+  </head>
+  <body>
+    <div class="site-container">
+        
+        <h1><%= title %></h1>
+        <div class="navbar navbar-inverse">
+            <div class="navbar-inner">
+                <div class="container">
+                    <div class="nav-collapse">
+                    <ul class="nav">
+                        
+                        <% for(var i=0; i<list.length; i++){ %>
+                            <li><a><%= list[i] %></a></li>
+                        <% } %>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- bower:js -->
+      <script src="/lib/jquery/dist/jquery.js"></script>
+      <script src="/lib/bootstrap/dist/js/bootstrap.js"></script>
+      <!-- endbower -->
     <!-- inject:js -->
     <script src="/js/index.js"></script>
     <!-- endinject -->
-  </head>
-  <body>
-      <h1><%= title %></h1>
-    <ul>
-        <% for(var i=0; i<list.length; i++){ %>
-            <li><%= list[i] %></li>
-        <% } %>
-    </ul>
   </body>
   
 </html>

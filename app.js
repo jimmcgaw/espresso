@@ -14,7 +14,7 @@ app.set('view engine', 'ejs');
 app.get('/', function(request, response){
     response.render('index', {
         title: 'Hello from render',
-        list: ['a', 'b', 'c', 'e']
+        list: ['Home', 'About', 'Buy Now!', 'Send Money']
     });
 });
 
