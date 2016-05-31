@@ -1,0 +1,23 @@
+{
+  "name": "espresso",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "jimmcgaw <jpmcgaw@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/jimmcgaw/espresso",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "bootstrap": "^4.0.0",
+    "font-awesome": "^4.6.3"
+  }
+}
