@@ -50,7 +50,7 @@ gulp.task('inject', function(){
         
 });
 
-gulp.task('serve', ['jshint', 'inject'], function(){
+gulp.task('serve', ['jshint', 'sass', 'inject'], function(){
     var options = {
         script: 'app.js',
         delayTime: 1,
