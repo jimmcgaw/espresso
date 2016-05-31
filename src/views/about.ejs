@@ -33,6 +33,16 @@
                 </div>
             </div>
         </div>
+        <main>
+            <% for(var i=0; i<team.length; i++){ %>
+                <div class="person">
+                    <img src="<%= team[i].img_src %>" alt="<%= team[i].name %>" />
+                    <p><%= team[i].blurb %></p>
+                    
+                    <a href="/about/<%= i %>">Read more -></a>
+                </div>
+            <% } %>
+        </main>
     </div>
       <!-- bower:js -->
       <script src="/lib/jquery/dist/jquery.js"></script>

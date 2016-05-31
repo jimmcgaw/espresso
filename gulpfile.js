@@ -41,7 +41,7 @@ gulp.task('inject', function(){
         bowerJson: require('./bower.json'),
         directory: './public/lib',
         ignorePath: '../../public'
-    }
+    };
     
     return gulp.src('./src/views/*.ejs')
         .pipe(wiredep(options))
@@ -64,4 +64,4 @@ gulp.task('serve', ['jshint', 'sass', 'inject'], function(){
         .on('restart', function(ev){
             console.log('Restarting...');
         });
-})
+});
